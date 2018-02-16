@@ -1,0 +1,560 @@
+[     9.976] 
+X.Org X Server 1.18.4
+Release Date: 2016-07-19
+[     9.976] X Protocol Version 11, Revision 0
+[     9.976] Build Operating System: Linux 4.4.0-97-generic x86_64 Ubuntu
+[     9.976] Current Operating System: Linux crasher 4.8.0-53-generic #56~16.04.1-Ubuntu SMP Tue May 16 01:18:56 UTC 2017 x86_64
+[     9.976] Kernel command line: BOOT_IMAGE=/boot/vmlinuz-4.8.0-53-generic root=UUID=2c225096-ad31-49ca-b0ef-d08ee2eabea7 ro quiet splash
+[     9.976] Build Date: 13 October 2017  01:57:05PM
+[     9.976] xorg-server 2:1.18.4-0ubuntu0.7 (For technical support please see http://www.ubuntu.com/support) 
+[     9.976] Current version of pixman: 0.33.6
+[     9.976] 	Before reporting problems, check http://wiki.x.org
+	to make sure that you have the latest version.
+[     9.976] Markers: (--) probed, (**) from config file, (==) default setting,
+	(++) from command line, (!!) notice, (II) informational,
+	(WW) warning, (EE) error, (NI) not implemented, (??) unknown.
+[     9.979] (==) Log file: "/var/log/Xorg.0.log", Time: Fri Feb 16 10:22:57 2018
+[     9.990] (==) Using system config directory "/usr/share/X11/xorg.conf.d"
+[     9.993] (==) No Layout section.  Using the first Screen section.
+[     9.993] (==) No screen section available. Using defaults.
+[     9.993] (**) |-->Screen "Default Screen Section" (0)
+[     9.993] (**) |   |-->Monitor "<default monitor>"
+[     9.995] (==) No monitor specified for screen "Default Screen Section".
+	Using a default monitor configuration.
+[     9.995] (==) Automatically adding devices
+[     9.995] (==) Automatically enabling devices
+[     9.995] (==) Automatically adding GPU devices
+[     9.995] (==) Max clients allowed: 256, resource mask: 0x1fffff
+[     9.998] (WW) The directory "/usr/share/fonts/X11/cyrillic" does not exist.
+[     9.998] 	Entry deleted from font path.
+[     9.998] (WW) The directory "/usr/share/fonts/X11/100dpi/" does not exist.
+[     9.998] 	Entry deleted from font path.
+[     9.998] (WW) The directory "/usr/share/fonts/X11/75dpi/" does not exist.
+[     9.998] 	Entry deleted from font path.
+[     9.999] (WW) The directory "/usr/share/fonts/X11/100dpi" does not exist.
+[     9.999] 	Entry deleted from font path.
+[     9.999] (WW) The directory "/usr/share/fonts/X11/75dpi" does not exist.
+[     9.999] 	Entry deleted from font path.
+[     9.999] (==) FontPath set to:
+	/usr/share/fonts/X11/misc,
+	/usr/share/fonts/X11/Type1,
+	built-ins
+[     9.999] (==) ModulePath set to "/usr/lib/x86_64-linux-gnu/xorg/extra-modules,/usr/lib/xorg/extra-modules,/usr/lib/xorg/modules"
+[     9.999] (II) The server relies on udev to provide the list of input devices.
+	If no devices become available, reconfigure udev or disable AutoAddDevices.
+[     9.999] (II) Loader magic: 0x564011b3edc0
+[     9.999] (II) Module ABI versions:
+[     9.999] 	X.Org ANSI C Emulation: 0.4
+[     9.999] 	X.Org Video Driver: 20.0
+[     9.999] 	X.Org XInput driver : 22.1
+[     9.999] 	X.Org Server Extension : 9.0
+[    10.003] (++) using VT number 7
+
+[    10.003] (II) systemd-logind: logind integration requires -keeptty and -keeptty was not provided, disabling logind integration
+[    10.005] (II) xfree86: Adding drm device (/dev/dri/card0)
+[    10.028] (--) PCI:*(0:0:2:0) 8086:0126:1025:0504 rev 9, Mem @ 0xd1400000/4194304, 0xc0000000/268435456, I/O @ 0x00003000/64, BIOS @ 0x????????/131072
+[    10.028] (WW) "glamoregl" will not be loaded unless you've specified it to be loaded elsewhere.
+[    10.028] (II) "glx" will be loaded by default.
+[    10.028] (II) LoadModule: "glx"
+[    10.034] (II) Loading /usr/lib/xorg/modules/extensions/libglx.so
+[    10.065] (II) Module glx: vendor="X.Org Foundation"
+[    10.065] 	compiled for 1.18.4, module version = 1.0.0
+[    10.066] 	ABI class: X.Org Server Extension, version 9.0
+[    10.066] (==) AIGLX enabled
+[    10.066] (==) Matched intel as autoconfigured driver 0
+[    10.066] (==) Matched intel as autoconfigured driver 1
+[    10.066] (==) Matched modesetting as autoconfigured driver 2
+[    10.066] (==) Matched fbdev as autoconfigured driver 3
+[    10.066] (==) Matched vesa as autoconfigured driver 4
+[    10.066] (==) Assigned the driver to the xf86ConfigLayout
+[    10.066] (II) LoadModule: "intel"
+[    10.067] (II) Loading /usr/lib/xorg/modules/drivers/intel_drv.so
+[    10.074] (II) Module intel: vendor="X.Org Foundation"
+[    10.074] 	compiled for 1.18.4, module version = 2.99.917
+[    10.074] 	Module class: X.Org Video Driver
+[    10.074] 	ABI class: X.Org Video Driver, version 20.0
+[    10.074] (II) LoadModule: "modesetting"
+[    10.074] (II) Loading /usr/lib/xorg/modules/drivers/modesetting_drv.so
+[    10.076] (II) Module modesetting: vendor="X.Org Foundation"
+[    10.076] 	compiled for 1.18.4, module version = 1.18.4
+[    10.076] 	Module class: X.Org Video Driver
+[    10.076] 	ABI class: X.Org Video Driver, version 20.0
+[    10.076] (II) LoadModule: "fbdev"
+[    10.076] (II) Loading /usr/lib/xorg/modules/drivers/fbdev_drv.so
+[    10.077] (II) Module fbdev: vendor="X.Org Foundation"
+[    10.078] 	compiled for 1.18.1, module version = 0.4.4
+[    10.078] 	Module class: X.Org Video Driver
+[    10.078] 	ABI class: X.Org Video Driver, version 20.0
+[    10.078] (II) LoadModule: "vesa"
+[    10.078] (II) Loading /usr/lib/xorg/modules/drivers/vesa_drv.so
+[    10.079] (II) Module vesa: vendor="X.Org Foundation"
+[    10.079] 	compiled for 1.18.1, module version = 2.3.4
+[    10.079] 	Module class: X.Org Video Driver
+[    10.079] 	ABI class: X.Org Video Driver, version 20.0
+[    10.079] (II) intel: Driver for Intel(R) Integrated Graphics Chipsets:
+	i810, i810-dc100, i810e, i815, i830M, 845G, 854, 852GM/855GM, 865G,
+	915G, E7221 (i915), 915GM, 945G, 945GM, 945GME, Pineview GM,
+	Pineview G, 965G, G35, 965Q, 946GZ, 965GM, 965GME/GLE, G33, Q35, Q33,
+	GM45, 4 Series, G45/G43, Q45/Q43, G41, B43
+[    10.079] (II) intel: Driver for Intel(R) HD Graphics: 2000-6000
+[    10.079] (II) intel: Driver for Intel(R) Iris(TM) Graphics: 5100, 6100
+[    10.079] (II) intel: Driver for Intel(R) Iris(TM) Pro Graphics: 5200, 6200, P6300
+[    10.079] (II) modesetting: Driver for Modesetting Kernel Drivers: kms
+[    10.079] (II) FBDEV: driver for framebuffer: fbdev
+[    10.079] (II) VESA: driver for VESA chipsets: vesa
+[    10.087] (II) intel(0): Using Kernel Mode Setting driver: i915, version 1.6.0 20160711
+[    10.087] (II) intel(0): SNA compiled: xserver-xorg-video-intel 2:2.99.917+git20160325-1ubuntu1.2 (Timo Aaltonen <tjaalton@debian.org>)
+[    10.087] (II) intel(0): SNA compiled for use with valgrind
+[    10.088] (WW) Falling back to old probe method for modesetting
+[    10.088] (WW) Falling back to old probe method for fbdev
+[    10.088] (II) Loading sub module "fbdevhw"
+[    10.088] (II) LoadModule: "fbdevhw"
+[    10.088] (II) Loading /usr/lib/xorg/modules/libfbdevhw.so
+[    10.089] (II) Module fbdevhw: vendor="X.Org Foundation"
+[    10.089] 	compiled for 1.18.4, module version = 0.0.2
+[    10.089] 	ABI class: X.Org Video Driver, version 20.0
+[    10.089] (WW) Falling back to old probe method for vesa
+[    10.090] (--) intel(0): Integrated Graphics Chipset: Intel(R) HD Graphics 3000
+[    10.090] (--) intel(0): CPU: x86-64, sse2, sse3, ssse3, sse4.1, sse4.2, avx; using a maximum of 2 threads
+[    10.090] (II) intel(0): Creating default Display subsection in Screen section
+	"Default Screen Section" for depth/fbbpp 24/32
+[    10.090] (==) intel(0): Depth 24, (--) framebuffer bpp 32
+[    10.090] (==) intel(0): RGB weight 888
+[    10.090] (==) intel(0): Default visual is TrueColor
+[    10.091] (II) intel(0): Output LVDS1 has no monitor section
+[    10.416] (--) intel(0): Found backlight control interface intel_backlight (type 'raw') for output LVDS1
+[    10.416] (II) intel(0): Enabled output LVDS1
+[    10.416] (II) intel(0): Output VGA1 has no monitor section
+[    10.416] (II) intel(0): Enabled output VGA1
+[    10.416] (II) intel(0): Output HDMI1 has no monitor section
+[    10.416] (II) intel(0): Enabled output HDMI1
+[    10.416] (II) intel(0): Output DP1 has no monitor section
+[    10.416] (II) intel(0): Enabled output DP1
+[    10.416] (--) intel(0): Using a maximum size of 256x256 for hardware cursors
+[    10.416] (II) intel(0): Output VIRTUAL1 has no monitor section
+[    10.416] (II) intel(0): Enabled output VIRTUAL1
+[    10.416] (--) intel(0): Output LVDS1 using initial mode 1366x768 on pipe 0
+[    10.416] (--) intel(0): Output HDMI1 using initial mode 1920x1080 on pipe 1
+[    10.416] (==) intel(0): TearFree disabled
+[    10.416] (==) intel(0): DPI set to (96, 96)
+[    10.416] (II) Loading sub module "dri2"
+[    10.416] (II) LoadModule: "dri2"
+[    10.416] (II) Module "dri2" already built-in
+[    10.416] (II) Loading sub module "present"
+[    10.416] (II) LoadModule: "present"
+[    10.416] (II) Module "present" already built-in
+[    10.636] (II) UnloadModule: "modesetting"
+[    10.636] (II) Unloading modesetting
+[    10.636] (II) UnloadModule: "fbdev"
+[    10.636] (II) Unloading fbdev
+[    10.636] (II) UnloadSubModule: "fbdevhw"
+[    10.636] (II) Unloading fbdevhw
+[    10.636] (II) UnloadModule: "vesa"
+[    10.636] (II) Unloading vesa
+[    10.636] (==) Depth 24 pixmap format is 32 bpp
+[    10.641] (II) intel(0): SNA initialized with Sandybridge (gen6, gt2) backend
+[    10.641] (==) intel(0): Backing store enabled
+[    10.641] (==) intel(0): Silken mouse enabled
+[    10.642] (II) intel(0): HW Cursor enabled
+[    10.642] (II) intel(0): RandR 1.2 enabled, ignore the following RandR disabled message.
+[    10.643] (==) intel(0): DPMS enabled
+[    10.643] (==) intel(0): Display hotplug detection enabled
+[    10.643] (II) intel(0): [DRI2] Setup complete
+[    10.643] (II) intel(0): [DRI2]   DRI driver: i965
+[    10.643] (II) intel(0): [DRI2]   VDPAU driver: va_gl
+[    10.643] (II) intel(0): direct rendering: DRI2 enabled
+[    10.643] (II) intel(0): hardware support for Present enabled
+[    10.643] (--) RandR disabled
+[    10.647] (II) SELinux: Disabled on system
+[    10.685] (II) AIGLX: enabled GLX_MESA_copy_sub_buffer
+[    10.685] (II) AIGLX: enabled GLX_ARB_create_context
+[    10.685] (II) AIGLX: enabled GLX_ARB_create_context_profile
+[    10.685] (II) AIGLX: enabled GLX_EXT_create_context_es{,2}_profile
+[    10.685] (II) AIGLX: enabled GLX_INTEL_swap_event
+[    10.685] (II) AIGLX: enabled GLX_SGI_swap_control and GLX_MESA_swap_control
+[    10.685] (II) AIGLX: enabled GLX_EXT_framebuffer_sRGB
+[    10.685] (II) AIGLX: enabled GLX_ARB_fbconfig_float
+[    10.685] (II) AIGLX: enabled GLX_EXT_fbconfig_packed_float
+[    10.685] (II) AIGLX: GLX_EXT_texture_from_pixmap backed by buffer objects
+[    10.685] (II) AIGLX: enabled GLX_ARB_create_context_robustness
+[    10.685] (II) AIGLX: Loaded and initialized i965
+[    10.685] (II) GLX: Initialized DRI2 GL provider for screen 0
+[    10.690] (II) intel(0): switch to mode 1366x768@60.0 on LVDS1 using pipe 0, position (0, 0), rotation normal, reflection none
+[    10.698] (II) intel(0): switch to mode 1920x1080@60.0 on HDMI1 using pipe 1, position (0, 0), rotation normal, reflection none
+[    10.715] (II) intel(0): Setting screen physical size to 508 x 285
+[    10.762] (II) config/udev: Adding input device Power Button (/dev/input/event3)
+[    10.762] (**) Power Button: Applying InputClass "evdev keyboard catchall"
+[    10.762] (II) LoadModule: "evdev"
+[    10.762] (II) Loading /usr/lib/xorg/modules/input/evdev_drv.so
+[    10.767] (II) Module evdev: vendor="X.Org Foundation"
+[    10.767] 	compiled for 1.18.1, module version = 2.10.1
+[    10.767] 	Module class: X.Org XInput Driver
+[    10.767] 	ABI class: X.Org XInput driver, version 22.1
+[    10.767] (II) Using input driver 'evdev' for 'Power Button'
+[    10.767] (**) Power Button: always reports core events
+[    10.767] (**) evdev: Power Button: Device: "/dev/input/event3"
+[    10.767] (--) evdev: Power Button: Vendor 0 Product 0x1
+[    10.767] (--) evdev: Power Button: Found keys
+[    10.767] (II) evdev: Power Button: Configuring as keyboard
+[    10.767] (**) Option "config_info" "udev:/sys/devices/LNXSYSTM:00/LNXPWRBN:00/input/input3/event3"
+[    10.767] (II) XINPUT: Adding extended input device "Power Button" (type: KEYBOARD, id 6)
+[    10.767] (**) Option "xkb_rules" "evdev"
+[    10.767] (**) Option "xkb_model" "pc105"
+[    10.767] (**) Option "xkb_layout" "us,ru"
+[    10.767] (**) Option "xkb_variant" ","
+[    10.767] (**) Option "xkb_options" "grp:alt_shift_toggle,grp_led:scroll"
+[    10.788] (II) config/udev: Adding input device Video Bus (/dev/input/event5)
+[    10.788] (**) Video Bus: Applying InputClass "evdev keyboard catchall"
+[    10.788] (II) Using input driver 'evdev' for 'Video Bus'
+[    10.788] (**) Video Bus: always reports core events
+[    10.788] (**) evdev: Video Bus: Device: "/dev/input/event5"
+[    10.788] (--) evdev: Video Bus: Vendor 0 Product 0x6
+[    10.788] (--) evdev: Video Bus: Found keys
+[    10.788] (II) evdev: Video Bus: Configuring as keyboard
+[    10.788] (**) Option "config_info" "udev:/sys/devices/LNXSYSTM:00/LNXSYBUS:00/PNP0A08:00/LNXVIDEO:00/input/input7/event5"
+[    10.788] (II) XINPUT: Adding extended input device "Video Bus" (type: KEYBOARD, id 7)
+[    10.788] (**) Option "xkb_rules" "evdev"
+[    10.788] (**) Option "xkb_model" "pc105"
+[    10.788] (**) Option "xkb_layout" "us,ru"
+[    10.788] (**) Option "xkb_variant" ","
+[    10.788] (**) Option "xkb_options" "grp:alt_shift_toggle,grp_led:scroll"
+[    10.789] (II) config/udev: Adding input device Power Button (/dev/input/event0)
+[    10.789] (**) Power Button: Applying InputClass "evdev keyboard catchall"
+[    10.789] (II) Using input driver 'evdev' for 'Power Button'
+[    10.789] (**) Power Button: always reports core events
+[    10.789] (**) evdev: Power Button: Device: "/dev/input/event0"
+[    10.789] (--) evdev: Power Button: Vendor 0 Product 0x1
+[    10.789] (--) evdev: Power Button: Found keys
+[    10.789] (II) evdev: Power Button: Configuring as keyboard
+[    10.789] (**) Option "config_info" "udev:/sys/devices/LNXSYSTM:00/LNXSYBUS:00/PNP0A08:00/device:01/PNP0C0C:00/input/input0/event0"
+[    10.789] (II) XINPUT: Adding extended input device "Power Button" (type: KEYBOARD, id 8)
+[    10.789] (**) Option "xkb_rules" "evdev"
+[    10.789] (**) Option "xkb_model" "pc105"
+[    10.789] (**) Option "xkb_layout" "us,ru"
+[    10.789] (**) Option "xkb_variant" ","
+[    10.789] (**) Option "xkb_options" "grp:alt_shift_toggle,grp_led:scroll"
+[    10.790] (II) config/udev: Adding input device Lid Switch (/dev/input/event1)
+[    10.790] (II) No input driver specified, ignoring this device.
+[    10.790] (II) This device may have been added with another device file.
+[    10.790] (II) config/udev: Adding input device Sleep Button (/dev/input/event2)
+[    10.790] (**) Sleep Button: Applying InputClass "evdev keyboard catchall"
+[    10.790] (II) Using input driver 'evdev' for 'Sleep Button'
+[    10.790] (**) Sleep Button: always reports core events
+[    10.790] (**) evdev: Sleep Button: Device: "/dev/input/event2"
+[    10.790] (--) evdev: Sleep Button: Vendor 0 Product 0x3
+[    10.790] (--) evdev: Sleep Button: Found keys
+[    10.790] (II) evdev: Sleep Button: Configuring as keyboard
+[    10.790] (**) Option "config_info" "udev:/sys/devices/LNXSYSTM:00/LNXSYBUS:00/PNP0A08:00/device:01/PNP0C0E:00/input/input2/event2"
+[    10.790] (II) XINPUT: Adding extended input device "Sleep Button" (type: KEYBOARD, id 9)
+[    10.790] (**) Option "xkb_rules" "evdev"
+[    10.790] (**) Option "xkb_model" "pc105"
+[    10.790] (**) Option "xkb_layout" "us,ru"
+[    10.790] (**) Option "xkb_variant" ","
+[    10.790] (**) Option "xkb_options" "grp:alt_shift_toggle,grp_led:scroll"
+[    10.790] (II) config/udev: Adding input device Video Bus (/dev/input/event6)
+[    10.790] (**) Video Bus: Applying InputClass "evdev keyboard catchall"
+[    10.790] (II) Using input driver 'evdev' for 'Video Bus'
+[    10.790] (**) Video Bus: always reports core events
+[    10.790] (**) evdev: Video Bus: Device: "/dev/input/event6"
+[    10.790] (--) evdev: Video Bus: Vendor 0 Product 0x6
+[    10.790] (--) evdev: Video Bus: Found keys
+[    10.790] (II) evdev: Video Bus: Configuring as keyboard
+[    10.790] (**) Option "config_info" "udev:/sys/devices/LNXSYSTM:00/LNXSYBUS:00/PNP0A08:00/device:34/LNXVIDEO:01/input/input8/event6"
+[    10.790] (II) XINPUT: Adding extended input device "Video Bus" (type: KEYBOARD, id 10)
+[    10.791] (**) Option "xkb_rules" "evdev"
+[    10.791] (**) Option "xkb_model" "pc105"
+[    10.791] (**) Option "xkb_layout" "us,ru"
+[    10.791] (**) Option "xkb_variant" ","
+[    10.791] (**) Option "xkb_options" "grp:alt_shift_toggle,grp_led:scroll"
+[    10.791] (II) config/udev: Adding input device 1.3M HD WebCam (/dev/input/event15)
+[    10.791] (**) 1.3M HD WebCam: Applying InputClass "evdev keyboard catchall"
+[    10.791] (II) Using input driver 'evdev' for '1.3M HD WebCam'
+[    10.791] (**) 1.3M HD WebCam: always reports core events
+[    10.791] (**) evdev: 1.3M HD WebCam: Device: "/dev/input/event15"
+[    10.791] (--) evdev: 1.3M HD WebCam: Vendor 0x4f2 Product 0xb23d
+[    10.791] (--) evdev: 1.3M HD WebCam: Found keys
+[    10.791] (II) evdev: 1.3M HD WebCam: Configuring as keyboard
+[    10.791] (**) Option "config_info" "udev:/sys/devices/pci0000:00/0000:00:1a.0/usb1/1-1/1-1.3/1-1.3:1.0/input/input16/event15"
+[    10.791] (II) XINPUT: Adding extended input device "1.3M HD WebCam" (type: KEYBOARD, id 11)
+[    10.791] (**) Option "xkb_rules" "evdev"
+[    10.791] (**) Option "xkb_model" "pc105"
+[    10.791] (**) Option "xkb_layout" "us,ru"
+[    10.791] (**) Option "xkb_variant" ","
+[    10.791] (**) Option "xkb_options" "grp:alt_shift_toggle,grp_led:scroll"
+[    10.792] (II) config/udev: Adding input device HDA Intel PCH Mic (/dev/input/event12)
+[    10.792] (II) No input driver specified, ignoring this device.
+[    10.792] (II) This device may have been added with another device file.
+[    10.792] (II) config/udev: Adding input device HDA Intel PCH Headphone (/dev/input/event13)
+[    10.792] (II) No input driver specified, ignoring this device.
+[    10.792] (II) This device may have been added with another device file.
+[    10.792] (II) config/udev: Adding input device HDA Intel PCH HDMI/DP,pcm=3 (/dev/input/event14)
+[    10.792] (II) No input driver specified, ignoring this device.
+[    10.792] (II) This device may have been added with another device file.
+[    10.793] (II) config/udev: Adding input device A4TECH USB Device (/dev/input/event7)
+[    10.793] (**) A4TECH USB Device: Applying InputClass "evdev keyboard catchall"
+[    10.793] (II) Using input driver 'evdev' for 'A4TECH USB Device'
+[    10.793] (**) A4TECH USB Device: always reports core events
+[    10.793] (**) evdev: A4TECH USB Device: Device: "/dev/input/event7"
+[    10.793] (--) evdev: A4TECH USB Device: Vendor 0x9da Product 0x9090
+[    10.793] (--) evdev: A4TECH USB Device: Found 1 mouse buttons
+[    10.793] (--) evdev: A4TECH USB Device: Found scroll wheel(s)
+[    10.793] (--) evdev: A4TECH USB Device: Found relative axes
+[    10.793] (--) evdev: A4TECH USB Device: Found absolute axes
+[    10.793] (--) evdev: A4TECH USB Device: Found absolute multitouch axes
+[    10.793] (--) evdev: A4TECH USB Device: Fake MT device detected
+[    10.793] (--) evdev: A4TECH USB Device: Found x and y absolute axes
+[    10.793] (--) evdev: A4TECH USB Device: Found keys
+[    10.793] (II) evdev: A4TECH USB Device: Forcing relative x/y axes to exist.
+[    10.793] (II) evdev: A4TECH USB Device: Configuring as mouse
+[    10.793] (II) evdev: A4TECH USB Device: Configuring as keyboard
+[    10.793] (II) evdev: A4TECH USB Device: Adding scrollwheel support
+[    10.793] (**) evdev: A4TECH USB Device: YAxisMapping: buttons 4 and 5
+[    10.793] (**) evdev: A4TECH USB Device: EmulateWheelButton: 4, EmulateWheelInertia: 10, EmulateWheelTimeout: 200
+[    10.793] (**) Option "config_info" "udev:/sys/devices/pci0000:00/0000:00:1d.0/usb2/2-1/2-1.2/2-1.2:1.0/0003:09DA:9090.0001/input/input9/event7"
+[    10.793] (II) XINPUT: Adding extended input device "A4TECH USB Device" (type: KEYBOARD, id 12)
+[    10.793] (**) Option "xkb_rules" "evdev"
+[    10.793] (**) Option "xkb_model" "pc105"
+[    10.793] (**) Option "xkb_layout" "us,ru"
+[    10.793] (**) Option "xkb_variant" ","
+[    10.793] (**) Option "xkb_options" "grp:alt_shift_toggle,grp_led:scroll"
+[    10.793] (II) evdev: A4TECH USB Device: initialized for relative axes.
+[    10.793] (WW) evdev: A4TECH USB Device: ignoring absolute axes.
+[    10.793] (**) A4TECH USB Device: (accel) keeping acceleration scheme 1
+[    10.793] (**) A4TECH USB Device: (accel) acceleration profile 0
+[    10.793] (**) A4TECH USB Device: (accel) acceleration factor: 2.000
+[    10.793] (**) A4TECH USB Device: (accel) acceleration threshold: 4
+[    10.794] (II) config/udev: Adding input device A4TECH USB Device (/dev/input/js0)
+[    10.794] (II) No input driver specified, ignoring this device.
+[    10.794] (II) This device may have been added with another device file.
+[    10.794] (II) config/udev: Adding input device A4TECH USB Device (/dev/input/event8)
+[    10.794] (**) A4TECH USB Device: Applying InputClass "evdev pointer catchall"
+[    10.794] (II) Using input driver 'evdev' for 'A4TECH USB Device'
+[    10.794] (**) A4TECH USB Device: always reports core events
+[    10.794] (**) evdev: A4TECH USB Device: Device: "/dev/input/event8"
+[    10.852] (--) evdev: A4TECH USB Device: Vendor 0x9da Product 0x9090
+[    10.852] (--) evdev: A4TECH USB Device: Found 20 mouse buttons
+[    10.852] (--) evdev: A4TECH USB Device: Found scroll wheel(s)
+[    10.852] (--) evdev: A4TECH USB Device: Found relative axes
+[    10.852] (--) evdev: A4TECH USB Device: Found x and y relative axes
+[    10.852] (II) evdev: A4TECH USB Device: Configuring as mouse
+[    10.852] (II) evdev: A4TECH USB Device: Adding scrollwheel support
+[    10.852] (**) evdev: A4TECH USB Device: YAxisMapping: buttons 4 and 5
+[    10.852] (**) evdev: A4TECH USB Device: EmulateWheelButton: 4, EmulateWheelInertia: 10, EmulateWheelTimeout: 200
+[    10.852] (**) Option "config_info" "udev:/sys/devices/pci0000:00/0000:00:1d.0/usb2/2-1/2-1.2/2-1.2:1.1/0003:09DA:9090.0002/input/input10/event8"
+[    10.852] (II) XINPUT: Adding extended input device "A4TECH USB Device" (type: MOUSE, id 13)
+[    10.852] (II) evdev: A4TECH USB Device: initialized for relative axes.
+[    10.852] (**) A4TECH USB Device: (accel) keeping acceleration scheme 1
+[    10.852] (**) A4TECH USB Device: (accel) acceleration profile 0
+[    10.852] (**) A4TECH USB Device: (accel) acceleration factor: 2.000
+[    10.852] (**) A4TECH USB Device: (accel) acceleration threshold: 4
+[    10.852] (II) config/udev: Adding input device A4TECH USB Device (/dev/input/mouse0)
+[    10.852] (II) No input driver specified, ignoring this device.
+[    10.852] (II) This device may have been added with another device file.
+[    10.853] (II) config/udev: Adding input device AT Translated Set 2 keyboard (/dev/input/event4)
+[    10.853] (**) AT Translated Set 2 keyboard: Applying InputClass "evdev keyboard catchall"
+[    10.853] (II) Using input driver 'evdev' for 'AT Translated Set 2 keyboard'
+[    10.853] (**) AT Translated Set 2 keyboard: always reports core events
+[    10.853] (**) evdev: AT Translated Set 2 keyboard: Device: "/dev/input/event4"
+[    10.853] (--) evdev: AT Translated Set 2 keyboard: Vendor 0x1 Product 0x1
+[    10.853] (--) evdev: AT Translated Set 2 keyboard: Found keys
+[    10.853] (II) evdev: AT Translated Set 2 keyboard: Configuring as keyboard
+[    10.853] (**) Option "config_info" "udev:/sys/devices/platform/i8042/serio0/input/input4/event4"
+[    10.853] (II) XINPUT: Adding extended input device "AT Translated Set 2 keyboard" (type: KEYBOARD, id 14)
+[    10.853] (**) Option "xkb_rules" "evdev"
+[    10.853] (**) Option "xkb_model" "pc105"
+[    10.853] (**) Option "xkb_layout" "us,ru"
+[    10.853] (**) Option "xkb_variant" ","
+[    10.853] (**) Option "xkb_options" "grp:alt_shift_toggle,grp_led:scroll"
+[    10.853] (II) config/udev: Adding input device ETPS/2 Elantech Touchpad (/dev/input/event9)
+[    10.853] (**) ETPS/2 Elantech Touchpad: Applying InputClass "evdev touchpad catchall"
+[    10.853] (**) ETPS/2 Elantech Touchpad: Applying InputClass "evdev touchscreen catchall"
+[    10.853] (**) ETPS/2 Elantech Touchpad: Applying InputClass "touchpad catchall"
+[    10.853] (**) ETPS/2 Elantech Touchpad: Applying InputClass "Default clickpad buttons"
+[    10.853] (II) LoadModule: "synaptics"
+[    10.853] (II) Loading /usr/lib/xorg/modules/input/synaptics_drv.so
+[    10.854] (II) Module synaptics: vendor="X.Org Foundation"
+[    10.854] 	compiled for 1.18.1, module version = 1.8.2
+[    10.854] 	Module class: X.Org XInput Driver
+[    10.854] 	ABI class: X.Org XInput driver, version 22.1
+[    10.854] (II) Using input driver 'synaptics' for 'ETPS/2 Elantech Touchpad'
+[    10.854] (**) ETPS/2 Elantech Touchpad: always reports core events
+[    10.854] (**) Option "Device" "/dev/input/event9"
+[    10.916] (II) synaptics: ETPS/2 Elantech Touchpad: ignoring touch events for semi-multitouch device
+[    10.916] (--) synaptics: ETPS/2 Elantech Touchpad: x-axis range 0 - 2508 (res 31)
+[    10.916] (--) synaptics: ETPS/2 Elantech Touchpad: y-axis range 0 - 1056 (res 31)
+[    10.916] (--) synaptics: ETPS/2 Elantech Touchpad: pressure range 0 - 255
+[    10.916] (--) synaptics: ETPS/2 Elantech Touchpad: finger width range 0 - 15
+[    10.916] (--) synaptics: ETPS/2 Elantech Touchpad: buttons: left right double triple
+[    10.916] (--) synaptics: ETPS/2 Elantech Touchpad: Vendor 0x2 Product 0xe
+[    10.916] (--) synaptics: ETPS/2 Elantech Touchpad: touchpad found
+[    10.916] (**) ETPS/2 Elantech Touchpad: always reports core events
+[    10.960] (**) Option "config_info" "udev:/sys/devices/platform/i8042/serio1/input/input6/event9"
+[    10.960] (II) XINPUT: Adding extended input device "ETPS/2 Elantech Touchpad" (type: TOUCHPAD, id 15)
+[    10.960] (**) synaptics: ETPS/2 Elantech Touchpad: (accel) MinSpeed is now constant deceleration 2.5
+[    10.960] (**) synaptics: ETPS/2 Elantech Touchpad: (accel) MaxSpeed is now 1.75
+[    10.960] (**) synaptics: ETPS/2 Elantech Touchpad: (accel) AccelFactor is now 0.074
+[    10.960] (**) ETPS/2 Elantech Touchpad: (accel) keeping acceleration scheme 1
+[    10.960] (**) ETPS/2 Elantech Touchpad: (accel) acceleration profile 1
+[    10.960] (**) ETPS/2 Elantech Touchpad: (accel) acceleration factor: 2.000
+[    10.960] (**) ETPS/2 Elantech Touchpad: (accel) acceleration threshold: 4
+[    10.960] (--) synaptics: ETPS/2 Elantech Touchpad: touchpad found
+[    10.960] (II) config/udev: Adding input device ETPS/2 Elantech Touchpad (/dev/input/mouse1)
+[    10.960] (**) ETPS/2 Elantech Touchpad: Ignoring device from InputClass "touchpad ignore duplicates"
+[    10.962] (II) config/udev: Adding input device Acer WMI hotkeys (/dev/input/event10)
+[    10.962] (**) Acer WMI hotkeys: Applying InputClass "evdev keyboard catchall"
+[    10.962] (II) Using input driver 'evdev' for 'Acer WMI hotkeys'
+[    10.962] (**) Acer WMI hotkeys: always reports core events
+[    10.962] (**) evdev: Acer WMI hotkeys: Device: "/dev/input/event10"
+[    10.962] (--) evdev: Acer WMI hotkeys: Vendor 0 Product 0
+[    10.962] (--) evdev: Acer WMI hotkeys: Found keys
+[    10.962] (II) evdev: Acer WMI hotkeys: Configuring as keyboard
+[    10.962] (**) Option "config_info" "udev:/sys/devices/virtual/input/input11/event10"
+[    10.962] (II) XINPUT: Adding extended input device "Acer WMI hotkeys" (type: KEYBOARD, id 16)
+[    10.962] (**) Option "xkb_rules" "evdev"
+[    10.962] (**) Option "xkb_model" "pc105"
+[    10.962] (**) Option "xkb_layout" "us,ru"
+[    10.962] (**) Option "xkb_variant" ","
+[    10.962] (**) Option "xkb_options" "grp:alt_shift_toggle,grp_led:scroll"
+[    10.962] (II) config/udev: Adding input device Acer BMA150 accelerometer (/dev/input/event11)
+[    10.962] (II) No input driver specified, ignoring this device.
+[    10.962] (II) This device may have been added with another device file.
+[    10.962] (II) config/udev: Adding input device Acer BMA150 accelerometer (/dev/input/js1)
+[    10.962] (II) No input driver specified, ignoring this device.
+[    10.962] (II) This device may have been added with another device file.
+[    12.417] (II) intel(0): EDID vendor "AUO", prod id 8940
+[    12.417] (II) intel(0): Printing DDC gathered Modelines:
+[    12.417] (II) intel(0): Modeline "1366x768"x0.0   73.30  1366 1382 1398 1550  768 771 785 788 -hsync -vsync (47.3 kHz eP)
+[    65.149] (II) config/udev: removing device A4TECH USB Device
+[    65.168] (II) evdev: A4TECH USB Device: Close
+[    65.168] (II) UnloadModule: "evdev"
+[    65.253] (II) config/udev: removing device A4TECH USB Device
+[    65.268] (II) evdev: A4TECH USB Device: Close
+[    65.268] (II) UnloadModule: "evdev"
+[    65.738] (II) config/udev: Adding input device A4TECH USB Device (/dev/input/mouse0)
+[    65.738] (II) No input driver specified, ignoring this device.
+[    65.738] (II) This device may have been added with another device file.
+[    65.742] (II) config/udev: Adding input device A4TECH USB Device (/dev/input/js0)
+[    65.742] (II) No input driver specified, ignoring this device.
+[    65.742] (II) This device may have been added with another device file.
+[    65.807] (II) config/udev: Adding input device A4TECH USB Device (/dev/input/event7)
+[    65.807] (**) A4TECH USB Device: Applying InputClass "evdev keyboard catchall"
+[    65.807] (II) Using input driver 'evdev' for 'A4TECH USB Device'
+[    65.807] (**) A4TECH USB Device: always reports core events
+[    65.807] (**) evdev: A4TECH USB Device: Device: "/dev/input/event7"
+[    65.807] (--) evdev: A4TECH USB Device: Vendor 0x9da Product 0x9090
+[    65.807] (--) evdev: A4TECH USB Device: Found 1 mouse buttons
+[    65.807] (--) evdev: A4TECH USB Device: Found scroll wheel(s)
+[    65.807] (--) evdev: A4TECH USB Device: Found relative axes
+[    65.807] (--) evdev: A4TECH USB Device: Found absolute axes
+[    65.807] (--) evdev: A4TECH USB Device: Found absolute multitouch axes
+[    65.807] (--) evdev: A4TECH USB Device: Fake MT device detected
+[    65.807] (--) evdev: A4TECH USB Device: Found x and y absolute axes
+[    65.807] (--) evdev: A4TECH USB Device: Found keys
+[    65.807] (II) evdev: A4TECH USB Device: Forcing relative x/y axes to exist.
+[    65.807] (II) evdev: A4TECH USB Device: Configuring as mouse
+[    65.807] (II) evdev: A4TECH USB Device: Configuring as keyboard
+[    65.807] (II) evdev: A4TECH USB Device: Adding scrollwheel support
+[    65.807] (**) evdev: A4TECH USB Device: YAxisMapping: buttons 4 and 5
+[    65.807] (**) evdev: A4TECH USB Device: EmulateWheelButton: 4, EmulateWheelInertia: 10, EmulateWheelTimeout: 200
+[    65.807] (**) Option "config_info" "udev:/sys/devices/pci0000:00/0000:00:1d.0/usb2/2-1/2-1.2/2-1.2:1.0/0003:09DA:9090.0003/input/input17/event7"
+[    65.807] (II) XINPUT: Adding extended input device "A4TECH USB Device" (type: KEYBOARD, id 12)
+[    65.807] (**) Option "xkb_rules" "evdev"
+[    65.807] (**) Option "xkb_model" "pc105"
+[    65.807] (**) Option "xkb_layout" "us,ru"
+[    65.807] (**) Option "xkb_variant" ","
+[    65.807] (**) Option "xkb_options" "grp:alt_shift_toggle,grp_led:scroll"
+[    65.807] (II) evdev: A4TECH USB Device: initialized for relative axes.
+[    65.807] (WW) evdev: A4TECH USB Device: ignoring absolute axes.
+[    65.807] (**) A4TECH USB Device: (accel) keeping acceleration scheme 1
+[    65.807] (**) A4TECH USB Device: (accel) acceleration profile 0
+[    65.807] (**) A4TECH USB Device: (accel) acceleration factor: 2.000
+[    65.807] (**) A4TECH USB Device: (accel) acceleration threshold: 4
+[    65.843] (II) config/udev: Adding input device A4TECH USB Device (/dev/input/event8)
+[    65.843] (**) A4TECH USB Device: Applying InputClass "evdev pointer catchall"
+[    65.843] (II) Using input driver 'evdev' for 'A4TECH USB Device'
+[    65.843] (**) A4TECH USB Device: always reports core events
+[    65.843] (**) evdev: A4TECH USB Device: Device: "/dev/input/event8"
+[    65.928] (--) evdev: A4TECH USB Device: Vendor 0x9da Product 0x9090
+[    65.928] (--) evdev: A4TECH USB Device: Found 20 mouse buttons
+[    65.928] (--) evdev: A4TECH USB Device: Found scroll wheel(s)
+[    65.928] (--) evdev: A4TECH USB Device: Found relative axes
+[    65.928] (--) evdev: A4TECH USB Device: Found x and y relative axes
+[    65.928] (II) evdev: A4TECH USB Device: Configuring as mouse
+[    65.928] (II) evdev: A4TECH USB Device: Adding scrollwheel support
+[    65.928] (**) evdev: A4TECH USB Device: YAxisMapping: buttons 4 and 5
+[    65.928] (**) evdev: A4TECH USB Device: EmulateWheelButton: 4, EmulateWheelInertia: 10, EmulateWheelTimeout: 200
+[    65.928] (**) Option "config_info" "udev:/sys/devices/pci0000:00/0000:00:1d.0/usb2/2-1/2-1.2/2-1.2:1.1/0003:09DA:9090.0004/input/input18/event8"
+[    65.928] (II) XINPUT: Adding extended input device "A4TECH USB Device" (type: MOUSE, id 13)
+[    65.928] (II) evdev: A4TECH USB Device: initialized for relative axes.
+[    65.928] (**) A4TECH USB Device: (accel) keeping acceleration scheme 1
+[    65.928] (**) A4TECH USB Device: (accel) acceleration profile 0
+[    65.928] (**) A4TECH USB Device: (accel) acceleration factor: 2.000
+[    65.928] (**) A4TECH USB Device: (accel) acceleration threshold: 4
+[    75.291] (II) intel(0): resizing framebuffer to 3286x1080
+[    75.315] (II) intel(0): switch to mode 1366x768@60.0 on LVDS1 using pipe 0, position (1920, 312), rotation normal, reflection none
+[  9032.881] (II) config/udev: removing device A4TECH USB Device
+[  9032.911] (II) evdev: A4TECH USB Device: Close
+[  9032.911] (II) UnloadModule: "evdev"
+[  9032.975] (II) config/udev: removing device A4TECH USB Device
+[  9033.002] (II) evdev: A4TECH USB Device: Close
+[  9033.002] (II) UnloadModule: "evdev"
+[  9033.500] (II) config/udev: Adding input device A4TECH USB Device (/dev/input/js0)
+[  9033.500] (II) No input driver specified, ignoring this device.
+[  9033.500] (II) This device may have been added with another device file.
+[  9033.502] (II) config/udev: Adding input device A4TECH USB Device (/dev/input/mouse0)
+[  9033.502] (II) No input driver specified, ignoring this device.
+[  9033.502] (II) This device may have been added with another device file.
+[  9033.520] (II) config/udev: Adding input device A4TECH USB Device (/dev/input/event7)
+[  9033.520] (**) A4TECH USB Device: Applying InputClass "evdev keyboard catchall"
+[  9033.520] (II) Using input driver 'evdev' for 'A4TECH USB Device'
+[  9033.520] (**) A4TECH USB Device: always reports core events
+[  9033.520] (**) evdev: A4TECH USB Device: Device: "/dev/input/event7"
+[  9033.521] (--) evdev: A4TECH USB Device: Vendor 0x9da Product 0x9090
+[  9033.521] (--) evdev: A4TECH USB Device: Found 1 mouse buttons
+[  9033.521] (--) evdev: A4TECH USB Device: Found scroll wheel(s)
+[  9033.521] (--) evdev: A4TECH USB Device: Found relative axes
+[  9033.521] (--) evdev: A4TECH USB Device: Found absolute axes
+[  9033.521] (--) evdev: A4TECH USB Device: Found absolute multitouch axes
+[  9033.521] (--) evdev: A4TECH USB Device: Fake MT device detected
+[  9033.521] (--) evdev: A4TECH USB Device: Found x and y absolute axes
+[  9033.521] (--) evdev: A4TECH USB Device: Found keys
+[  9033.521] (II) evdev: A4TECH USB Device: Forcing relative x/y axes to exist.
+[  9033.521] (II) evdev: A4TECH USB Device: Configuring as mouse
+[  9033.521] (II) evdev: A4TECH USB Device: Configuring as keyboard
+[  9033.521] (II) evdev: A4TECH USB Device: Adding scrollwheel support
+[  9033.521] (**) evdev: A4TECH USB Device: YAxisMapping: buttons 4 and 5
+[  9033.521] (**) evdev: A4TECH USB Device: EmulateWheelButton: 4, EmulateWheelInertia: 10, EmulateWheelTimeout: 200
+[  9033.521] (**) Option "config_info" "udev:/sys/devices/pci0000:00/0000:00:1d.0/usb2/2-1/2-1.2/2-1.2:1.0/0003:09DA:9090.0005/input/input19/event7"
+[  9033.521] (II) XINPUT: Adding extended input device "A4TECH USB Device" (type: KEYBOARD, id 12)
+[  9033.521] (**) Option "xkb_rules" "evdev"
+[  9033.521] (**) Option "xkb_model" "pc105"
+[  9033.521] (**) Option "xkb_layout" "us,ru"
+[  9033.521] (**) Option "xkb_variant" ","
+[  9033.521] (**) Option "xkb_options" "grp:alt_shift_toggle,grp_led:scroll"
+[  9033.521] (II) evdev: A4TECH USB Device: initialized for relative axes.
+[  9033.521] (WW) evdev: A4TECH USB Device: ignoring absolute axes.
+[  9033.522] (**) A4TECH USB Device: (accel) keeping acceleration scheme 1
+[  9033.522] (**) A4TECH USB Device: (accel) acceleration profile 0
+[  9033.522] (**) A4TECH USB Device: (accel) acceleration factor: 2.000
+[  9033.522] (**) A4TECH USB Device: (accel) acceleration threshold: 4
+[  9033.632] (II) config/udev: Adding input device A4TECH USB Device (/dev/input/event8)
+[  9033.632] (**) A4TECH USB Device: Applying InputClass "evdev pointer catchall"
+[  9033.632] (II) Using input driver 'evdev' for 'A4TECH USB Device'
+[  9033.632] (**) A4TECH USB Device: always reports core events
+[  9033.632] (**) evdev: A4TECH USB Device: Device: "/dev/input/event8"
+[  9033.692] (--) evdev: A4TECH USB Device: Vendor 0x9da Product 0x9090
+[  9033.692] (--) evdev: A4TECH USB Device: Found 20 mouse buttons
+[  9033.692] (--) evdev: A4TECH USB Device: Found scroll wheel(s)
+[  9033.692] (--) evdev: A4TECH USB Device: Found relative axes
+[  9033.692] (--) evdev: A4TECH USB Device: Found x and y relative axes
+[  9033.692] (II) evdev: A4TECH USB Device: Configuring as mouse
+[  9033.692] (II) evdev: A4TECH USB Device: Adding scrollwheel support
+[  9033.692] (**) evdev: A4TECH USB Device: YAxisMapping: buttons 4 and 5
+[  9033.692] (**) evdev: A4TECH USB Device: EmulateWheelButton: 4, EmulateWheelInertia: 10, EmulateWheelTimeout: 200
+[  9033.692] (**) Option "config_info" "udev:/sys/devices/pci0000:00/0000:00:1d.0/usb2/2-1/2-1.2/2-1.2:1.1/0003:09DA:9090.0006/input/input20/event8"
+[  9033.692] (II) XINPUT: Adding extended input device "A4TECH USB Device" (type: MOUSE, id 13)
+[  9033.693] (II) evdev: A4TECH USB Device: initialized for relative axes.
+[  9033.693] (**) A4TECH USB Device: (accel) keeping acceleration scheme 1
+[  9033.693] (**) A4TECH USB Device: (accel) acceleration profile 0
+[  9033.693] (**) A4TECH USB Device: (accel) acceleration factor: 2.000
+[  9033.693] (**) A4TECH USB Device: (accel) acceleration threshold: 4
