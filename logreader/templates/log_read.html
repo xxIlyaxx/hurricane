@@ -3,7 +3,12 @@
 {% block title %}{{ logfile.description }}{% endblock %}
 
 {% block content %}
-    {% for line in logfile.content %}
-        <div class="logline">{{ line }}</div>
-    {% endfor %}
+    <div class="scroll-buttons">
+    <span class="btn btn-up"><i class="fas fa-arrow-up"></i></span><span class="btn btn-down"><i class="fas fa-arrow-down"></i></span>
+    </div>
+    <div id="logcontent">
+        {% for line in logfile.content %}
+            <div class="logline">{{ line }}</div>
+        {% endfor %}
+    </div>
 {% endblock %}

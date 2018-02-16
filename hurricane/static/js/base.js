@@ -13,7 +13,14 @@
 // }
 
 $(document).ready(function() {
-    $(window).on("scroll", function(evt) {
-        console.dir(evt);
+    $(".btn").on("click", function() {
+        var logcontent = $("#logcontent");
+        if ($(this).hasClass("btn-up")) {
+            console.log("up");
+            logcontent.scrollTop(logcontent.scrollTop() - 16);
+        } else {
+            logcontent.scrollTop(logcontent.scrollTop() + 16);
+            console.log("down");
+        }
     });
 });
