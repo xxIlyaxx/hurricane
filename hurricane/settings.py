@@ -24,9 +24,11 @@ BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 SECRET_KEY = 'e7ac043gv2)slyc+8ykx#-u$c(8$gv!8w1cx=b%_twv#lyl)j='
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = True
+DEBUG = False
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = [
+    'hurricanelog.herokuapp.com',
+]
 
 
 # Application definition
