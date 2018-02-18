@@ -11,7 +11,6 @@ https://docs.djangoproject.com/en/1.9/ref/settings/
 """
 
 import os
-from django.utils.crypto import get_random_string
 
 # Build paths inside the project like this: os.path.join(BASE_DIR, ...)
 BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
@@ -138,16 +137,16 @@ LOGFILES_LIST = [
     {
         "id": "1",
         "description": "Лог dpkg",
-        "path": os.path.join(BASE_DIR, "dpkg.log")
+        "path": os.path.join(BASE_DIR, "systemlogs", "dpkg.log")
     },
     {
         "id": "2",
         "description": "Лог update-alternatives",
-        "path": os.path.join(BASE_DIR, "alternatives.log")
+        "path": os.path.join(BASE_DIR, "systemlogs", "alternatives.log")
     },
     {
         "id": "3",
         "description": "Лог Xorg",
-        "path": os.path.join(BASE_DIR, "Xorg.0.log")
+        "path": os.path.join(BASE_DIR, "systemlogs", "Xorg.0.log")
     },
 ]
